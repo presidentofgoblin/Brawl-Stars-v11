@@ -27,7 +27,7 @@ class LogicBattle(Thread):
                 self.player.battleTick = self.tick
                 #print("Tick: ", self.tick)
             self.process()
-            time.sleep(0.00003)
+            time.sleep(0.003)
 
     def process(self):
         VisionUpdateMessage(self.client, self.player).send(self.crypto)
